@@ -1,0 +1,77 @@
+
+*{
+    font-family: 'Montserrat', sans-serif;
+}
+.form{
+    width: 100%;
+    height: 100%;
+    background: #2980B9;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #FFFFFF, #6DD5FA, #2980B9);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(0deg, #FFFFFF, #6DD5FA, #2980B9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    padding: 20px;
+}
+
+.form .container{
+    margin-top: 50px;
+    background-color: white;
+    max-width: 1000px;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.gif{
+    display: flex;
+    justify-content: center;
+}
+
+
+.form-control:focus {
+    border-color: #F99500;
+    outline: 0;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(255, 168, 0, 1);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(255, 168, 0, 1);
+}
+
+.form-select:focus {
+    border-color: #F99500;
+    outline: 0;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(255, 168, 0, 1);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(255, 168, 0, 1);
+}
+
+.form-check-input:focus{
+    border-color: #F99500;
+    outline: 0;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(255, 168, 0, 1);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(255, 168, 0, 1);
+}
+
+.form-check-input:checked {
+    background-color: #F99500;
+    border-color: #F99500;
+}
+
+.back:hover{
+    color:white;
+    background-color: #F99500;
+    border-color: #F99500;
+    outline: 0;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(255, 168, 0, 1);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(255, 168, 0, 1);
+    transition: 0.3s ease;
+}
+
+.btn-primary, .btn-primary:focus{
+    color:white;
+    background-color: #F99500;
+    border-color: #F99500;
+}
+.btn-primary:hover{
+    color:white;
+    background-color: #F99500;
+    border-color: #F99500;
+    outline: 0;
+    -webkit-box-shadow: inset 0 2px 2px rgba(0,0,0,.075),0 0 8px rgba(255, 168, 0, 1);
+    box-shadow: inset 0 2px 2px rgba(0,0,0,.075),0 0 8px rgba(255, 168, 0, 1);
+    transition: 0.3s ease;
+}

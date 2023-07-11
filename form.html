@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/form_style.css">
+    <title>Запись</title>
+  </head>
+  <body>
+
+    <div class="form">
+      <a href="index.html"  class="btn btn-light back">Назад</a>
+      <h1 class="text-center text-white">Запись</h1>
+      <div class="container">
+
+        <form class="row g-3" novalidate>
+          <div class="col-md-4">
+            <label for="Fname" class="form-label">Имя</label>
+            <input id="Fname" type="text" class="form-control" placeholder="Иван">
+          </div>
+          <div class="col-md-4">
+            <label for="Sname" class="form-label">Фамилия</label>
+            <input id="Sname" type="text" class="form-control" placeholder="Иванов">
+          </div>
+
+          <div class="col-md-4">
+            <label for="phone" class="form-label">Номер телефона</label>
+            <input id="phone" type="tel" class="form-control" placeholder="+7(999)-999-99-99">
+          </div>
+
+          <div class="col-md-7">
+            <label for="service" class="form-label">Услуга</label>
+            <select id="service" class="form-select">
+              <option selected disabled value="" label=" "></option>
+              <option>Прыжок в тандеме с инструктором</option>
+              <option>Самостоятельный прыжок
+                с десантным парашютом 800м</option>
+              <option>Самостоятельный прыжок
+                с десантным парашютом 1000м</option>
+              <option>Спортивный прыжок с парашютом
+                3000м</option>
+              <option>Полёт на самолёте</option>
+            </select>
+          </div>
+
+          <div class="col-md-5">
+            <label for="place" class="form-label">Аэродром</label>
+            <select id="place" class="form-select">
+              <option selected disabled value="" label=" "></option>
+              <option>Куммолово</option>
+              <option>Никольское</option>
+              <option>Валькирия</option>
+            </select>
+          </div>
+
+          <div class="col-md-5">
+            <label for="email" class="form-label">Электронная почта</label>
+            <input id="email" type="email" class="form-control" placeholder="name@example.com">
+          </div>
+
+          <div class="col-md-4">
+            <label for="date" class="form-label">Дата</label>
+            <div class="col">
+                <div class="input-group date" id="datepicker">
+                    <input id="date" type="text" class="form-control" placeholder="дд/мм/гггг">
+                    <span class="input-group-append">
+                        <span class="input-group-text bg-white d-block">
+                            <i class="fa fa-calendar"></i>
+                        </span>
+                    </span>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+          <label for="validationCustom04" class="form-label">Время</label>
+          <select class="form-select" id="validationCustom04" required>
+            <option selected disabled value="" label=" "></option>
+            <option>10:00-11:00</option>
+            <option>11:00-12:00</option>
+            <option>12:00-13:00</option>
+            <option>13:00-14:00</option>
+            <option>14:00-15:00</option>
+            <option>15:00-16:00</option>
+            <option>16:00-17:00</option>
+          </select>
+        </div>
+
+        <div class="col-md-12">
+          <p>Дополнительные услуги</p>
+          <input type="checkbox" class="form-check-input" id="Check1">
+          <label class="form-check-label" for="Check1">Видеосъемка тандем прыжка с инструктором</label>
+        </div>
+        <div class="col-md-12">
+          <input type="checkbox" class="form-check-input" id="Check2">
+          <label class="form-check-label" for="Check2">Видеосъемка прыжка воздушным оператором</label>
+        </div>
+        <div class="col-md-12">
+          <input type="checkbox" class="form-check-input" id="Check3">
+          <label class="form-check-label" for="Check3">Монтаж вашего видео</label>
+        </div>
+        <div class="col-md-12"></div>
+        </form>
+
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#SuccessModal">Отправить</button>
+
+      </div>
+    </div>
+
+    <div class="modal fade" id="SuccessModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Готово</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+              Заявка отправлена, в ближайшее время с вами свяжется оператор для уточнения подробностей. Готовьтесь получить лучшие эмоции!
+              <div class="gif">
+                <img src="img/giphy.gif" height="150" alt="gif">
+              </div>
+
+          </div>
+          <div class="modal-footer">
+            <a href="index.html" class="btn btn-primary">На главную</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
+    <script src="app.js"></script>
+
+  </body>
+</html>
